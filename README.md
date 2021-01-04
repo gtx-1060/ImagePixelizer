@@ -41,6 +41,5 @@ pip install -r requirements.txt
 Then just execute *launcher.py* script.
 
 ## Attention!
-- **The script is written and tested on windows.** When running on Linux, you may experience problems with the file system!
-- Вon't forget the slash at the end of the path
-- Use */* or *\\* in the pathes (not *\*)
+- Don't forget the slashes at the end of the pathes
+- Use ```/``` or ```\\``` (on windows) in the pathes (not ```\``` )
