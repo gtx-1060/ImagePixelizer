@@ -5,7 +5,7 @@
   ImagePixelizer 
   <br>
 </h1>
-<p align="center">Python script for pixelating pictures using <a href=""https://pixel-me.tokyo/en/>pixel-me</a> API</p>
+<p align="center">Python script for pixelating pictures using <a href="https://pixel-me.tokyo/en/">pixel-me</a> API</p>
 
 ## Features
  - You can adjust the strength of pixelation
