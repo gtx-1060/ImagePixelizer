@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="https://github.com/gtx-1060/DzenParser/"><img src="https://i.ibb.co/B37rSdy/Frame-1.png" alt="ImagePixelizer "></a>
+  <a href="https://github.com/gtx-1060/ImagePixelizer"><img src="https://i.ibb.co/B37rSdy/Frame-1.png" alt="ImagePixelizer "></a>
   <br>
   ImagePixelizer 
   <br>
