@@ -42,4 +42,4 @@ Then just execute *launcher.py* script.
 
 ## Attention!
 - Don't forget the slashes at the end of the pathes
-- Use '/' or '\\' (on windows) in the pathes (not '\' )
+- Use '/' or '\\' (on windows) in the pathes (not one backslash )
