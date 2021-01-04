@@ -10,11 +10,15 @@ class Util:
 
     @staticmethod
     def convert_all_to_png(folder : str, quality : int = 30) -> str:
-        toPath = path.abspath(folder+"./")+path.basename(folder)+"_converted\\"
+        toPath = path.join(path.abspath(folder), path.basename(folder), "converted/")
+        print(path.basename(folder))
         Util.converted_path = toPath
         if (not path.isdir(toPath)):
             mkdir(toPath)
         for fl in Util.file_list(folder):
+            if path.isdir(path.join(folder,fl)):
+                continue
+            print(fl)
             Util.save_with_compression(folder+fl, f"{toPath+fl[0:fl.rfind('.')]}.png", quality)
         return toPath
     
@@ -46,7 +50,14 @@ class Util:
     @staticmethod
     def compress_image(img : Image.Image):
         w, h = img.size
-        return img.resize((400, 400 * h // w))
+        print(w, h)
+        if w > h:
+            h = int(400 * (h / w))
+            w = 400
+        else:
+            w = int(400 * (w / h))
+            h = 400
+        return img.resize((w, h))
 
     @staticmethod
     def get_hash(pic : bytes):
@@ -84,5 +95,3 @@ class Util:
         except Exception as e:
             print(e)
         return settings
-
-    
