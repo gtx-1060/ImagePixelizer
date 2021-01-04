@@ -23,7 +23,7 @@ def start_async(files : list, new_path : str, out_path : str):
         thread.join()
 
     print(f"All operations completed in {round(time.time() - startTime,3)} seconds")
-    #Util.delete_cached()
+    Util.delete_cached()
 
 def launch():
     settings = Util.load_settings()

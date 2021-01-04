@@ -50,7 +50,6 @@ class Util:
     @staticmethod
     def compress_image(img : Image.Image):
         w, h = img.size
-        print(w, h)
         if w > h:
             h = int(400 * (h / w))
             w = 400
